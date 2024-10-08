@@ -13,7 +13,7 @@ Estas son las caracteristicas del servidor:
 - Licencia `Estandar`
 
 ### 1.1 Perdidas de subministro electrico
-Tenemos un SAI de 2700w que puede mantener el servidor activo.
+Tenemos un [SAI](https://www.pccomponentes.com/salicru-sps-advance-rt2-sai-2700w-3000-va) de 2700w que puede mantener el servidor activo.
 - Tensión nominal de entrada `208v` / `220v` / `230v` / `240v`
 
 ### 1.2 Teletrabajo
