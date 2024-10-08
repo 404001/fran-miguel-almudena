@@ -22,5 +22,7 @@ El servidor dispone de rendimiento suficiente para teletrabajar
 ### 1.3 Copias de seguridad
 Contratar un servicio de almacenamiento en la nube como aws s3 que cuentan con un plan de `0,023 USD por GB` que en total al mes son `23 USD` al mes.
 
+Con esto podras almacenar 1 tera de datos en la nube incluido copias de seguridad, y si necesita mas espacion puedo contratar mas espacion.
+
 ### 1.4 Replicas del servidor
 El servidor cuanta con imagenes para aumentar el numero de servidores con el mismo contenido
