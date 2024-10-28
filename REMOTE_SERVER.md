@@ -79,3 +79,9 @@ Para almacenar las credenciales de acceso al servidor Core, ejecuta el siguiente
 ```pws
 cmdkey /add:10.10.1.20 /user:vboxuser /pass:changeme
 ```
+
+### 3. Probar la conexion de las maquinas con el Remote Desktop
+
+```pws
+Enter-PSSession -ComputerName 10.10.1.20 -Credential vboxuser
+```
