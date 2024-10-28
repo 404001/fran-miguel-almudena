@@ -14,7 +14,7 @@ Rename-Computer -NewName "Srv1" -Restart
 Rename-Computer -NewName "Srv2" -Restart
 ```
 
-
+<br>
 
 ## Configuracion Red
 Vamos a usar una red de clase `A` con lo siguiente
@@ -22,9 +22,10 @@ Vamos a usar una red de clase `A` con lo siguiente
  - `Srv 2` / `10.10.1.12/24`
  - `Mascara de red` / `255.255.255.0`
 
+<br>
+
 ### Configuracion del Server 1
 El server 1 es con interfaz grafica, por lo q seria dirigirnos a ajustes adaptador de red, seleccionamos propiedades y `Ipv4`. Ahora pondremos toda la informacion de la red para el server 1.
-
 
 ### Configuracion del Server 2
 Este, al ser la version core tendremos que configurarlo por consola. Para ello necesitamos ejecutar los siguientes comandos.
@@ -39,6 +40,8 @@ Ahora vamos a cambiar la config de la red:
 ```pws
 New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.12" -PrefixLength 24
 ```
+
+<br>
 
 ## Habilitar el Remote Desktop
 En las dos maquinas nos dirigimos a la powershell y pondremos el siguiente comando:
