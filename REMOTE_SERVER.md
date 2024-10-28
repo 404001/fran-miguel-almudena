@@ -19,7 +19,7 @@ Rename-Computer -NewName "Srv2" -Restart
 ## Configuracion Red
 Vamos a usar una red de clase `A` con lo siguiente
  - `Srv 1` / `10.10.1.10/24`
- - `Srv 2` / `10.10.1.12/24`
+ - `Srv 2` / `10.10.1.20/24`
  - `Mascara de red` / `255.255.255.0`
 
 <br>
@@ -38,7 +38,7 @@ Get-NetAdapter
 Ahora vamos a cambiar la config de la red:
 
 ```pws
-New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.12" -PrefixLength 24
+New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.20" -PrefixLength 24
 ```
 
 <br>
@@ -53,3 +53,5 @@ sconfig
 Nos saldra un meno y tendremos q poner `4 + enter` y despues `1 + enter` para habilitar el remote desktop.
 
 Ahora poner el ping tendremos q poner lo mismo pero en vez de `1 + enter` es `3 + enter`
+
+## 
