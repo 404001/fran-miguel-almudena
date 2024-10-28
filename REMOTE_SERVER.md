@@ -28,3 +28,14 @@ El server 1 es con interfaz grafica, por lo q seria dirigirnos a ajustes adaptad
 
 ### Configuracion del Server 2
 Este, al ser la version core tendremos que configurarlo por consola. Para ello necesitamos ejecutar los siguientes comandos.
+
+Obtener la ID de los adaptadores de red disponibles:
+```pws
+Get-NetAdapter
+```
+
+Ahora vamos a cambiar la config de la red:
+
+```pws
+New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.12" -PrefixLength 24
+```
