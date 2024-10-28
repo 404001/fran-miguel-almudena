@@ -5,6 +5,8 @@ Realizar manual explicando el trabajo realizado. Debe incluir configuración del
 ### Maquinas Virtuales
 Necesitamos 2 maquinas, una tiene que ser `WindowsServerDesktop` y la otra `WindowsServerCore`
 
+Las maquinas tienen que estar en red interna las 2.
+
 ## Configuracion Red
 Vamos a usar una red de clase `A` con lo siguiente
  - `Srv 1` / `10.10.1.10/24`
@@ -13,3 +15,7 @@ Vamos a usar una red de clase `A` con lo siguiente
 
 ### Configuracion del Server 1
 El server 1 es con interfaz grafica, por lo q seria dirigirnos a ajustes adaptador de red, seleccionamos propiedades y `Ipv4`. Ahora pondremos toda la informacion de la red para el server 1.
+
+
+### Configuracion del Server 2
+Esta al ser la version core tendremos que configurarlo por consola.
