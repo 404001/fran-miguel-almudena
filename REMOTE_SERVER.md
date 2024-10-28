@@ -60,7 +60,20 @@ Ahora poner el ping tendremos q poner lo mismo pero en vez de `1 + enter` es `3 
 Una vez habilitado el remote desktop en los 2 equipos, tendremos q instalar en el servidor remoto `Srv2` lo siguiente:
 
 ```pws
+Enable-PSRemoting -Force
 winrm quickconfig
 ```
 
+### 1. Configurar el Servidor Local para Confiar en el Servidor Remoto (Trusted Host)
+En el servidor local (no en el Core), añade la IP del servidor Core como Trusted Host para permitir la administración remota. En el servidor local, ejecuta el siguiente comando en PowerShell:
 
+```pws
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "10.10.1.20"
+```
+
+### 2. Configuración de Credenciales en el Servidor Local
+Para almacenar las credenciales de acceso al servidor Core, ejecuta el siguiente comando en el servidor local (no en el Core):
+
+```pws
+cmdkey /add:10.10.1.20 /user:vboxuser /pass:changeme
+```
