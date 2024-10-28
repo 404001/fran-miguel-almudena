@@ -18,8 +18,8 @@ Rename-Computer -NewName "Srv2" -Restart
 
 ## Configuracion Red
 Vamos a usar una red de clase `A` con lo siguiente
- - `Srv 1` / `10.10.1.10/24`
- - `Srv 2` / `10.10.1.20/24`
+ - `Srv1` / `10.10.1.10/24`
+ - `Srv2` / `10.10.1.20/24`
  - `Mascara de red` / `255.255.255.0`
 
 <br>
@@ -39,7 +39,9 @@ Ahora vamos a cambiar la config de la red:
 
 ```pws
 New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.20" -PrefixLength 24
+Set-DnsClientServerAddress -InterfaceAlias "nombre_de_adaptador" -ServerAddresses ("8.8.8.8","8.8.4.4")
 ```
+
 
 <br>
 
@@ -54,4 +56,11 @@ Nos saldra un meno y tendremos q poner `4 + enter` y despues `1 + enter` para ha
 
 Ahora poner el ping tendremos q poner lo mismo pero en vez de `1 + enter` es `3 + enter`
 
-## 
+## Configuracion en el servidor remoto
+Una vez habilitado el remote desktop en los 2 equipos, tendremos q instalar en el servidor remoto `Srv2` lo siguiente:
+
+```pws
+winrm quickconfig
+```
+
+
