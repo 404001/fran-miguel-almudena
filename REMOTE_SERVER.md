@@ -39,3 +39,14 @@ Ahora vamos a cambiar la config de la red:
 ```pws
 New-NetIPAddress -InterfaceAlias "nombre_de_adaptador" -IPAddress "10.10.1.12" -PrefixLength 24
 ```
+
+## Habilitar el Remote Desktop
+En las dos maquinas nos dirigimos a la powershell y pondremos el siguiente comando:
+
+```pws
+sconfig
+```
+
+Nos saldra un meno y tendremos q poner `4 + enter` y despues `1 + enter` para habilitar el remote desktop.
+
+Ahora poner el ping tendremos q poner lo mismo pero en vez de `1 + enter` es `3 + enter`
