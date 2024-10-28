@@ -56,6 +56,8 @@ Nos saldra un meno y tendremos q poner `4 + enter` y despues `1 + enter` para ha
 
 Ahora poner el ping tendremos q poner lo mismo pero en vez de `1 + enter` es `3 + enter`
 
+<br>
+
 ## Configuracion en el servidor remoto
 Una vez habilitado el remote desktop en los 2 equipos, tendremos q instalar en el servidor remoto `Srv2` lo siguiente:
 
